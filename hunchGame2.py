@@ -24,6 +24,8 @@ ret, frame = webcam.read()
 x, y, w, h = cv2.selectROI(frame)
 rc = (x, y, w, h)
 
+
+
 if not ret:
     print('frame read failed!')
     sys.exit()
@@ -72,3 +74,10 @@ while webcam.isOpened():
     
 
     cv2.imshow('frame', frame)
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+    
+
+webcam.release()
+cv2.destroyAllWindows()  

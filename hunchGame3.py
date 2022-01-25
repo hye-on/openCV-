@@ -4,7 +4,7 @@ import cv2
 import time
 from datetime import datetime
 now = time.localtime()
-
+#test
 # 비디오 파일 열기
 #cap = cv2.VideoCapture('camshift.avi')
 

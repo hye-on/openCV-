@@ -67,7 +67,7 @@ while webcam.isOpened():
     if rc[1] == 0:
         global test
         cv2.rectangle(frame, rc, (0, 225, 0), 2)
-        now = time.localtime()  # 닿은 순간 시간 계산하기 위해서.
+        now = time.localtime()  # 닿은 순간 시간 계산하기 위해서
         hour = now.tm_hour
         min = now.tm_min
         sec = now.tm_sec
